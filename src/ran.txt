@@ -1,0 +1,28 @@
+{/*images.map((images) => {
+
+        return <Card key={images.id}{...images}>
+          
+        </Card>
+      })*/}
+
+
+
+cons [url, ramSize, storageCapacity, modelName, bateryLife,processorType, processorSpeed, graphicCard] =props;
+
+
+
+      
+,processorType, processorSpeed, graphicCard
+
+   <li>Processor Type:{processorType}</li>
+                     <li>Processor Speed:{processorSpeed}</li>
+                     <li>Graphic Card:{graphicCard}</li>
+
+
+
+
+
+                      {specifications.map((specifications)=>{
+        return <Modal key={specifications.id}{...specifications} className="click"></Modal>
+
+      })}

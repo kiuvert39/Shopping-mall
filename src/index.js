@@ -1,23 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from './components/card';
-import { images } from './imageArray';
-import '../src/components/card.css';
-
-
+import App from './components/player';
+//  import '../src/components/card.css';
+//  import Cards from './components/modal2';
+//  import Head from './components/header';
+//  import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//  import '../src/index.css';
+//  import {Cart} from "./components/cart"
 
 
 const Main = () => {
 
-
   return (
-    <section className="Card2">
-      {images.map((images) => {
+    <section  >
+       {/* <Head/>
 
-        return <Card key={images.id}{...images}></Card>
-      })}
-    
-    </section>
+    <Cards className="translate-y-2/4 dark:md:hover:bg-fuchsia-600"/>
+      <Router>
+        <Routes>
+          <Route path="Cards" element={Cards}/>
+          <Route path="/Cart" element={Cart}/>
+        </Routes>
+      </Router> */}
+
+    <App/>
+     </section>
+
   )
 }
 

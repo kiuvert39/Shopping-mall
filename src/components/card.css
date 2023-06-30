@@ -1,49 +1,135 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.image{
-    width: 310px;
-    display:start;
-    max-width:600px;
-    padding-right:6em;
-
+.image {
+  width: 220px;
+  display: start;
+  max-width: 600px;
+  padding-right: 6em;
 }
-.main-card{
-    border-radius:10px;
-    padding:40px;
-    margin-right: 10px;
-    min-width:10vh;
-    max-height:50vh;
-    background-color:rgb(241, 234, 234);
-    justify-content:center;
-    gap:2px;
-    margin-top:15px;
-
-    display:start;
+.main-card {
+  border-radius: 10px;
+  padding: 40px;
+  margin-right: 10px;
+  min-width: 10vh;
+  max-height: 50vh;
+  background-color: rgb(241, 234, 234);
+  justify-content: center;
+  gap: 2px;
+  margin-top: 15px;
+  display: start;
 }
-
-
-.price{
-    font-size: 2em;
-    font-family: fantasy;
-    color: rgb(54, 50, 44);
+.main-card:hover{
+   box-shadow: 2px 4px 6px rgb(94, 90, 89);
+    transition:400ms ease;
+    translate: 4px;
+    cursor: pointer;
 }
 
-.status{
-    font-size: 23px;
+.price {
+  font-size: 2em;
+  font-family: fantasy;
+  color: rgb(54, 50, 44);
+}
+
+.status {
+  font-size: 23px;
+  color: rgb(54, 50, 44);
+  padding-top: 8px;
+}
+
+.cards-container {
+  display: grid;
+  margin-right: 269px;
+  margin-left: 12em;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (width < 640px) {
+  .cards-container {
+    display: grid;
+    margin-left: 12em;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .status {
+    font-size: 20px;
     color: rgb(54, 50, 44);
     padding-top: 8px;
+  }
+
+  .main-card {
+    border-radius: 10px;
+    padding: 40px;
+    margin-right: 10px;
+    width: 150px;
+    max-width: 700px;
+    max-height: fit-content;
+    background-color: rgb(241, 234, 234);
+    justify-content: center;
+    gap: 2px;
+    margin-top: 15px;
+    display: start;
+    cursor: pointer;
+  }
+
+  .price {
+    font-size: 1.5em;
+    font-family: fantasy;
+    color: rgb(54, 50, 44);
+  }
+
+  /* .image {
+    width: 190px;
+    max-width: 600px;
+    position: relative;
+    right: 1.3em;
+    display: start;
+  } */
 }
 
+@media  screen and (max-width:767px)  {
+        .image {
+        width: 280px;
+        display: start;
+        max-width: 600px;
+        padding-right: 8em;
+        }
+        .main-card {
+        border-radius: 10px;
+        padding: 40px;
+        margin-left: px;
+        width:235px;
+        max-width: 700px;
+        max-height: fit-content;
+        background-color: rgb(241, 234, 234);
+        justify-content: center;
+        gap: 2px;
+        margin-top: 15px;
+        display: start;
+        cursor: pointer;
+        }
 
-.Card2{
-display:grid;
-margin-right:269px;
-margin-left: 12em;
-justify-content:center;
-grid-template-columns: repeat(3, 1fr)
+        .price {
+        font-size: 2em;
+        font-family: fantasy;
+        color: rgb(54, 50, 44);
+        }
+
+        .status {
+        font-size: 23px;
+        color: rgb(54, 50, 44);
+        padding-top: 8px;
+        }
+
+        .cards-container {
+        display: grid;    
+        margin-left: 17em;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-

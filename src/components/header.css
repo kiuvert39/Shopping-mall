@@ -1,0 +1,23 @@
+img{
+    width:10rem;
+    margin-bottom: 0;
+}
+.main-content{
+    width:100%;
+    height: 16rem;
+    margin-right: 30em;
+    background: linear-gradient(0.25turn, #5d8ea3, #a4b399, #e79e4f); 
+}
+.image-content{
+    position:relative;
+    margin-left: 60rem;
+    bottom:9rem
+}
+.text-header{
+    padding-top: 30px;
+    position: relative;
+    margin-left: 10rem;     
+    font-size:45px;
+    font-family:'Times New Roman', Times, serif;
+    color:whitesmoke;
+}

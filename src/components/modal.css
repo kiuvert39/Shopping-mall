@@ -34,7 +34,7 @@ body.active-modal {
     padding: 14px 28px;
     border-radius: 3px;
     max-width: 1000px;
-    min-width: 600px;
+    min-width: 800px;
     max-height: 800px;
     min-height: 400px;
     display:flex;
@@ -53,8 +53,51 @@ body.active-modal {
     padding: 5px 7px;
 }
 .modal-image{
-    width:em;
-    height: 14em;
-    margin-top: 55px;
+    width:22em;
+    margin-top: 40px;
+    border-radius: 10px;
 
+}
+.icons{
+    display:flex;
+    width:150px
+}
+
+.shopping{
+    position:relative;
+    left:33rem;   
+}
+.heart{
+     position:relative;
+    left:34rem;
+}
+.buy,.add{
+    max-width:15rem;
+    border:2px solid black;
+    border-radius:10px;
+}
+.add{
+    position: relative;
+    top:1rem;
+    left:2rem;
+  
+    margin-left:8px;
+    width:6rem; 
+}
+.buy{
+    position: relative;
+    top:1rem;
+
+    width:6rem
+}
+.add:hover{
+    background-color:rgb(76, 80, 73);
+    transition-delay: 300ms;
+
+ box-shadow: 2px 2px 2px 1px rgba(9, 180, 206, 0.2);
+}
+.buy:hover{
+    transform:translate(5px 12px);
+    background-color:rgb(76, 80, 73);
+    
 }

@@ -69,10 +69,10 @@ const {
         <img src={url} alt="error" className="modal-image" />
 
         <div className="conten2">
+          <ul className="props">
           <b>
             <h2 classNanme="device">Device properties</h2>
           </b>
-          <ul className="props">
             <li>Ram size:{ramSize}</li>
             <li>Storage:{storageCapacity}</li>
             <li>Model Name:{modelName}</li>

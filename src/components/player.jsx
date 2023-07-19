@@ -1,38 +1,34 @@
-import React, { useState } from "react";
-import ReactPlayer from "react-player";
-import "bootstrap/dist/css/bootstrap.min.css";
-import VideoCard from './videoCard'
+import React, { useState } from 'react'
+import data from './playerData.json'
 
-const App = () => {
- 
- 
+const Player= () =>{
 
- 
-  return (
-    <div>
-      
-      <VideoPlayer/>
-      <div>
-        <VideoCard title='thor' duration='8mins'/>
-        <VideoCard title='fast X' duration='8mins'/>
-        <VideoCard title='black adam' duration='8mins'/>
-        <VideoCard title='the mother' duration='8mins'/>
-        <VideoCard title='the ark' duration='8mins'/>
-      </div>
+    const [playing, setPlaying] = useState("");
 
-    </div>
-  );
-};
-
-const VideoPlayer = () => {
-   const [video, setVideo]=useState("https://youtu.be/8SnL0TxsGhQ")
 
   return (
     <div>
-    
-      <ReactPlayer url={video} controls={true} />
-    </div>
-  );
+
+       <div className='videoSwap'>
+               <h1 className='player1'>Video Player Area</h1>
+               <h5 className='VideoURL'>Video Url: {playing}</h5>
+       </div>
+
+       {/*consider the code above☝ as the main video player that you will create */}
+
+       <div>
+        {/* map method displays each item as well as adding an event listener each. */}
+            { data.map((value) => {
+                 return ( 
+                   <h1 key={value.id} onClick={() =>setPlaying(value.url)}>{value.name}</h1> 
+                ) }) }
+       </div>  
+
+    </div>    
+  )
 }
 
-export default App;
+
+
+
+export default Player

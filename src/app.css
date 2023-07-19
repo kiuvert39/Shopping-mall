@@ -1,0 +1,115 @@
+body{
+   
+}
+#hover:hover{
+    color:rgb(4, 151, 200);
+
+}
+.player1{
+    color:blue
+}
+Nav.Link::after{
+ content: '';
+ opacity:0;
+ transition:all 0.2s;
+ height:2px;
+ width: 100px;
+ background-color:greenyellow;
+ position:absolute;
+ bottom:0;
+ left:0;
+}
+Nav.Link:hover::after{
+    opacity: 0.5;
+}
+
+.videoCard{
+    color:white;
+    max-height: 18rem;
+    display: start;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-top: 3rem;;
+    margin-left:2rem;
+    max-width: 52rem;
+    background-color: rgb(83, 79, 79);
+}
+input{
+    margin-top: 25px;
+    width: 490px;
+    margin-left:150px;
+    padding-left:10px;
+    font-size:20px;
+
+}
+ .mainVideoCard{
+  display:grid;
+  
+   grid-template-columns: repeat(3, 1fr);
+ }   
+.title{
+    font-size:1.4rem;
+    padding-left: 1rem;
+}
+.title:hover{
+    cursor:pointer;
+    color:rgb(60, 60, 173)
+}
+.Release{
+    color:gray;
+    font-size:1rem;
+    padding-left: 1rem;
+}
+
+
+
+
+  @media (max-width: 576px) {
+    .mainVideoCard{
+    display: grid;
+    margin-right: 109px;
+    margin-left: 6em;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}}
+
+@media (max-width: 768px) { 
+    .mainVideoCard{
+    display: grid;
+    margin-right: 109px;
+    margin-left: 6em;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+ @media (max-width: 992px) {    .mainVideoCard{
+    display: grid;
+    margin-right: 109px;
+    margin-left: 6em;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+ }
+@media (width <= 576px) { 
+    .videoCard{
+    color:white;
+    max-height: 60rem;
+    display: start;    
+    background-color: rgb(83, 79, 79);
+    margin-right: 3px;
+    margin-left:3px;
+    margin-top: 3rem;
+    width: 6rem;
+    
+ }
+    .title{
+        font-size:1.4rem;
+        padding-left: 0rem;
+    }
+    .Release{
+        color:gray;
+        font-size:1rem;
+        padding-left: 0.4rem;
+    }
+}
